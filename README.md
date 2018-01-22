@@ -104,6 +104,14 @@ Description : change java code to kotlin [ notepad app ] (Udacity)
         }
     }
     
+    // String interpolation + Anko Concatenation
+    val SQL_CREATE_ENTRIES = """CREATE TABLE $_TABLE_NAME (
+        $_ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+        $TEXT TEXT,
+        $IS_PINNED INTEGER,
+        $CREATED_AT INTEGER,
+        $UPDATED_AT INTEGER
+        )""".trimMargin()
     
     // [ Generic ]
     // Java 의 wildcard 기능 == kotlin 의 in/out
