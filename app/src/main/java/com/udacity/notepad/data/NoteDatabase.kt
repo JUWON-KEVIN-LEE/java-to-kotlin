@@ -31,7 +31,7 @@ class NoteDatabase(context: Context) {
         helper = NotesOpenHelper(context)
     }
 
-    // TODO vararg ( ? )
+
     fun loadAllByIds(vararg ids: Int): List<Note> {
         val questionMarks = ids.map { "?" }.joinToString { ", " }
         val args = ids.map { it.toString() }

@@ -8,7 +8,7 @@ import com.udacity.notepad.data.NotesContract.NoteTable._ID
 import com.udacity.notepad.data.NotesContract.NoteTable._TABLE_NAME
 
 object NotesContract {
-    // TODO anko concatenation ( have to study more )
+
     val SQL_CREATE_ENTRIES = """CREATE TABLE $_TABLE_NAME (
         $_ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
         $TEXT TEXT,

@@ -5,7 +5,6 @@ import org.jetbrains.anko.doAsync
 
 object DataStore {
 
-    // TODO in kotlin compiler doesn't like static... ( ? )
     @JvmStatic
     lateinit var notes: NoteDatabase // late init >>> safer and cleaner
         private set
